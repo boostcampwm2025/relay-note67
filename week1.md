@@ -85,6 +85,9 @@
 > - 각각의 답변의 차이에 대해 양식에 기록한다.
 > - 기록한 양식을 링크로 공유한다.
 
+[예시](https://docs.google.com/document/d/1_3KtkESluOEbdcso9SEwdoU6z-hWXg8EomyL4iuBwAU/edit?tab=t.flnm3br5nrex)
+
+[양식](https://docs.google.com/document/d/1liia1Rir4WXHZqQj3PhQQGDTKVhUbv7yIMhZ15aX4LE/edit?tab=t.0)
 
 **💡 배경**
 
