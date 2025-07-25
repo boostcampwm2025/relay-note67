@@ -1,6 +1,6 @@
-Team 67
-
-J062, J066, J183, J276 
+> Team 67
+>
+> J062, J066, J183, J276 
 
 
 ## ❓ Quests
@@ -83,6 +83,13 @@ J062, J066, J183, J276
 > - 미션이 마무리 단계에 AI를 이용하여 격려를 받는다.
 > - 당일 미션의 내용과 간단한 회고, 수면시간, 식사시간 등 일련의 정보를 전달한다.
 > - 이를 기반으로 격려를 받는다.
+
+
+<img width="679" height="401" alt="AI격려예시1" src="https://github.com/user-attachments/assets/59764e6d-aba7-4b7d-bf6f-f93e7c92b5df" />
+
+<img width="668" height="708" alt="AI격려예시2" src="https://github.com/user-attachments/assets/4345fb04-661f-4049-8b5d-431e4b7a1665" />
+
+
 
 **💡 배경**
 
