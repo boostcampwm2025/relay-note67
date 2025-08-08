@@ -143,7 +143,52 @@ ex) 첫 번째 질문 : git의 동작 구조에 대해서 설명해주세요
 
 #### J142송민우:
 - 수행 내용: 키워드 깊이 우선 탐색
-- 느낀점:
+
+### [1단계] 주제: 벡터 DB (Vector Database)
+벡터 DB는 고차원 벡터(embedding)를 저장하고, 유사한 벡터를 빠르게 찾기 위해 설계된 데이터베이스입니다. 주로 자연어 처리(NLP), 이미지 검색, 추천 시스템 등에서 사용됩니다. 일반적인 RDBMS나 키-값 저장소와 달리, **"벡터 간의 거리"**를 기준으로 데이터를 검색합니다.
+
+- 관련 키워드 / 서브 개념:
+    - 임베딩(Embedding)
+    - 최근접 이웃 검색 (Nearest Neighbor Search)
+    - 벡터 유사도 (Cosine similarity, Euclidean distance 등)
+    - FAISS, Milvus, Weaviate 등 대표 벡터 DB
+    - ANN (Approximate Nearest Neighbor)
+    - 인덱싱 기법 (HNSW, IVF, PQ 등)
+
+### [2단계] 키워드 탐색: 1. 임베딩(Embedding)
+임베딩은 단어, 문장, 이미지 등 비정형 데이터를 고차원 벡터 공간으로 매핑하는 과정입니다. 이 벡터는 의미적으로 유사한 데이터끼리 가까운 거리로 배치됩니다.
+
+-  관련 키워드 / 서브 개념:
+    - Word2Vec, GloVe, FastText
+    - BERT, Sentence-BERT (문장 임베딩)
+    - CLIP (이미지-텍스트 임베딩)
+    - 고차원 벡터 공간
+    - 임베딩 차원 수 조정 (차원 축소, PCA 등)
+    - 임베딩 파인튜닝
+
+### [2단계] 키워드 탐색: 2. 최근접 이웃 검색 (Nearest Neighbor Search)
+벡터 DB의 핵심 기능은 **쿼리 벡터와 가장 가까운 벡터(들)**를 빠르게 찾는 것입니다. 거리 계산 기반이며, 고차원일수록 연산량이 커져 성능 최적화가 중요합니다.
+
+-  관련 키워드 / 서브 개념:
+    - k-NN (k-Nearest Neighbors)
+    - Brute-force search
+    - ANN (Approximate Nearest Neighbor)
+    - 거리 함수 (Cosine, Euclidean 등)
+    - 인덱싱 구조 (HNSW, KD-Tree, Ball-Tree 등)
+    - 검색 정확도 vs 성능 트레이드오프
+
+### [3단계] 키워드 탐색: ANN (Approximate Nearest Neighbor)
+고차원에서는 정확한 최근접 이웃 탐색이 매우 느리기 때문에, 근사적인 탐색(ANN) 알고리즘이 주로 사용됩니다. 이는 다소 부정확하더라도 훨씬 빠르게 유사 벡터를 찾아냅니다.
+
+-  관련 키워드 / 서브 개념:
+    - HNSW (Hierarchical Navigable Small World)
+    - LSH (Locality Sensitive Hashing)
+    - IVF (Inverted File Index)
+    - PQ (Product Quantization)
+    - recall@k, precision@k
+    - Open-source 라이브러리: FAISS, Annoy, ScaNN 등
+
+- 느낀점: 키워드를 따라 꼬리에 꼬리를 무는 학습을 하다보니 점점 학습이 잘 되고 효율이 좋은 것 같아서 유용했다.
 
 #### J301황찬우:
 - 수행 내용:
